@@ -30,6 +30,10 @@ p {
     color: black;
     font-size: 11px;
 }
+div.error {
+    background-color: brown;
+    color: crimson;
+}
 #title {
     text-align: center;
     color: cadetblue;
