@@ -1,9 +1,19 @@
 body {
     background-color: aliceblue;
+    font-family: 'Trebuchet MS';
 }
 h1 {
     color: darkslateblue;
 }
 p {
     color: darkgray;
+}
+#title {
+    text-align: center;
+    color: cadetblue;
+
+}
+#subtitle {
+    text-align: center;
+    color: dodgerblue;
 }
