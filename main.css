@@ -30,6 +30,9 @@ p {
     color: black;
     font-size: 11px;
 }
+div#header {
+    background-color: aqua;
+}
 div.error {
     background-color: brown;
     color: crimson;
