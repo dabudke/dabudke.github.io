@@ -34,6 +34,10 @@ div#header {
     background-color: aqua;
     font-family: monospace;
 }
+div.warning {
+    background-color: darkgoldenrod;
+    color: gold;
+}
 div.error {
     background-color: brown;
     color: crimson;
