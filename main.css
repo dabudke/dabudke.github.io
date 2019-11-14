@@ -32,6 +32,7 @@ p {
 }
 div#header {
     background-color: aqua;
+    font-family: monospace;
 }
 div.error {
     background-color: brown;
