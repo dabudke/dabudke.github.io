@@ -1,4 +1,3 @@
-# website
-The website for LittleKitacho.  I wish this could be private.
+# littlekitacho.github.io
 
-This is literally my website for my coding projects.  What could be more boring?
+This is the repository for my website, littlekitacho.github.io.
