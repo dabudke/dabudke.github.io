@@ -1,2 +1,5 @@
-node_modules
 .sass-cache
+node_modules/bulma/css
+node_modules/bulma/*.md
+node_modules/bulma/*.json
+node_modules/bulma/**/.DS_Store
