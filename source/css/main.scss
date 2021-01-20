@@ -1,0 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto+Slab&display=swap');
+
+$turquoise: #45baff;
+$family-sans-serif: "Montserrat", sans-serif;
+
+$primary: $turquoise;
+$primary-family: $family-sans-serif;
+
+@import "../../node_modules/bulma/bulma.sass";
