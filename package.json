@@ -1,0 +1,30 @@
+{
+  "name": "littlekitacho.github.io",
+  "version": "1.0.0",
+  "description": "This is the repository for my website, littlekitacho.github.io.",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "@babel/cli": "^7.12.10",
+    "@babel/core": "^7.12.10",
+    "sass": "^1.32.5"
+  },
+  "scripts": {
+    "build-js": "babel js/source -d js",
+    "build-css": "sass --update css/source:css",
+    "watch-js": "babel js/source -d js -w",
+    "watch-css": "sass --watch css/source:css",
+    "serve": "python -m http.server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LittleKitacho/littlekitacho.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LittleKitacho/littlekitacho.github.io/issues"
+  },
+  "homepage": "https://github.com/LittleKitacho/littlekitacho.github.io#readme"
+}
