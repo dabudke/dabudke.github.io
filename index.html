@@ -11,6 +11,7 @@
     </head>
     <body>
         <!-- Navbar -->
+        <!-- TODO automatically generate navbar -->
         <nav class="navbar is-fixed-top">
             <div class="navbar-brand">
                 <img src="/logo.png" height="16" width="16">
@@ -27,7 +28,8 @@
             <div class="navbar-menu" id="navMenu">
                 <div class="navbar-start">
                     <a class="navbar-item is-active">Home</a>
-                    <a class="navbar-item">About Me</a>
+                    <a class="navbar-item" href="/about-me/">About Me</a>
+                    <a class="navbar-item" href="/blog/">Blog</a>
                     <div class="navbar-item has-dropdown is-hoverable">
                         <a class="navbar-link">Projects</a>
 
@@ -42,9 +44,24 @@
                 </div>
 
                 <div class="navbar-end">
-                    <a class="navbar-item">YouTube</a>
-                    <a class="navbar-item" href="https://github.com/littlekitacho">GitHub</a>
-                    <a class="navbar-item">Discord</a>
+                    <a
+                        class="navbar-item"
+                        href="about:blank"
+                        onmouseover="this.style.color='#ff3c3c'; this.style.background='#fff7f7'"
+                        onmouseout="this.style.color='#4a4a4a'; this.style.background='white'"
+                    >YouTube</a>
+                    <a
+                        class="navbar-item"
+                        href="https://github.com/littlekitacho"
+                        onmouseover="this.style.color='#676767'"
+                        onmouseout="this.style.color='#4a4a4a'"
+                    >GitHub</a>
+                    <a
+                        class="navbar-item"
+                        href="about:blank"
+                        onmouseover="this.style.color='#435D94'; this.style.background='#f8f4ff'"
+                        onmouseout="this.style.color='#4a4a4a'; this.style.background='white'"
+                    >Discord</a>
                     <a class="navbar-item" href="https://twitter.com/@LittleKitacho">Twitter</a>
                 </div>
             </div>
