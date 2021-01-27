@@ -6,4 +6,22 @@ $family-sans-serif: "Montserrat", sans-serif;
 $primary: $turquoise;
 $primary-family: $family-sans-serif;
 
+a.navbar-item.lk-is-youtube.is-active,
+a.navbar-item.lk-is-youtube:hover {
+    color: #ff3c3c;
+    background-color: #fff7f7;
+}
+
+a.navbar-item.lk-is-github.is-active,
+a.navbar-item.lk-is-github:hover {
+    color: #4e4e4e;
+    background-color: #f1f1f1
+}
+
+a.navbar-item.lk-is-discord.is-active,
+a.navbar-item.lk-is-discord:hover {
+    color: #435D94;
+    background-color: #f8f4ff
+}
+
 @import "../bulma/bulma.sass";

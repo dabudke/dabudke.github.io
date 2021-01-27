@@ -44,25 +44,10 @@
                 </div>
 
                 <div class="navbar-end">
-                    <a
-                        class="navbar-item"
-                        href="about:blank"
-                        onmouseover="this.style.color='#ff3c3c'; this.style.background='#fff7f7'"
-                        onmouseout="this.style.color='#4a4a4a'; this.style.background='white'"
-                    >YouTube</a>
-                    <a
-                        class="navbar-item"
-                        href="https://github.com/littlekitacho"
-                        onmouseover="this.style.color='#676767'"
-                        onmouseout="this.style.color='#4a4a4a'"
-                    >GitHub</a>
-                    <a
-                        class="navbar-item"
-                        href="about:blank"
-                        onmouseover="this.style.color='#435D94'; this.style.background='#f8f4ff'"
-                        onmouseout="this.style.color='#4a4a4a'; this.style.background='white'"
-                    >Discord</a>
-                    <a class="navbar-item" href="https://twitter.com/@LittleKitacho">Twitter</a>
+                    <a class="navbar-item lk-is-youtube" href="about:blank">YouTube</a>
+                    <a class="navbar-item lk-is-github" href="https://github.com/littlekitacho">GitHub</a>
+                    <a class="navbar-item lk-is-discord" href="about:blank">Discord</a>
+                    <a class="navbar-item lk-is-twitter" href="https://twitter.com/@LittleKitacho">Twitter</a>
                 </div>
             </div>
         </nav>
@@ -216,13 +201,16 @@
 
         <!-- Footer -->
         <footer class="footer container has-text-centered is-light">
-            <a href="/index.html">Home</a> - <a href="/projects/index.html">Projects</a>
-            <p>Website made by LittleKitacho</p>
-            <p>
-                Most of it was <em>really</em> made by
-                <a href="https://jgthms.com/">jgthms</a> through
-                <a href="https://bulma.io">Bulma</a>.
-            </p>
+            <div class="level is-primary">
+                <a class="level-item">Home</a>
+                <a class="level-item">About Me</a>
+                <a class="level-item">Blog</a>
+                <a class="level-item">Projects</a>
+            </div>
+            <p>Website made by LittleKitacho with <a href="https://bulma.io/">Bulma</a>.</p>
+            <a href="https://bulma.io/" class="pt-2">
+                <img src="/made-with-bulma.png" alt="Made with Bulma" width="128" height="24">
+            </a>
         </footer>
     </body>
 </html>
