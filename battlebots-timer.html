@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+    :root {
+      font-family: sans-serif;
+    }    
+  
+    body {
+      height: 100%;
+      width: 98%;
+
+      display: grid;
+      align-items: center;
+      justify-content: center;
+    }
+    span {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    button:not(:last-child) {
+      margin-right: 4px;
+    }
+
+    .timer {
+      font-size: 50px;
+      padding: 1rem 2rem;
+    }
+
+    .timer.red {
+      color: white;
+      background-color: red;
+    }
+
+    .timer.yellow {
+      background-color: yellow;
+    }
+  </style>
+
+  <script>
+    var intervalID = null, timer = 18000, paused = false;
+
+    function updateDisplay() {
+      var timerE = document.querySelector(".timer");
+
+      if (intervalID === null && timer === 18000) {
+        timerE.innerHTML = "Click button to start";
+      } else {
+        var m = Math.floor(timer / 6000), s = Math.floor((timer - (m*6000)) / 100), ms = Math.floor(timer % 100);
+        timerE.innerHTML = `${m > 0 ? `${m}:` : ""}${s >= 10 ? s : `0${s}`}.${ms >= 10 ? ms : `0${ms}`}`;
+      }
+
+      if (paused) {timerE.classList.add("yellow"); timerE.classList.remove("red");}
+      else if (timer <= 3000) {timerE.classList.add("red"); timerE.classList.remove("yellow");}
+      else timerE.classList.remove("yellow", "red");
+    }
+    
+    function startTimer() {
+      if (intervalID !== null) return;
+      paused = false;
+      intervalID = setInterval(timerCycle,10);
+    }
+
+    function timerCycle() {
+      timer--;
+      if (timer <= 0) stopTimer();
+      updateDisplay();
+    }
+
+    function stopTimer() {
+      paused = timer > 0;
+      clearInterval(intervalID);
+      intervalID = null;
+      updateDisplay();
+    }
+
+    function resetTimer() {
+      paused = false;
+      clearInterval(intervalID);
+      intervalID = null;
+      timer = 18000, paused = false;
+      updateDisplay();
+    }
+  </script>
+</head>
+<body>
+  <p class="timer">Click button to start</p>
+  <span>
+    <button class="timer-start" onclick="startTimer();">Start</button>
+    <button class="timer-end" onclick="stopTimer();">Stop</button>
+    <button class="timer-reset" onclick="resetTimer();">Reset</button>
+  </span>
+  <p style="color: gray; font-size: small; text-align: center;">credit: Daniel Budke</p>
+</body>
+</html>
