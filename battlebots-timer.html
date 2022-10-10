@@ -32,6 +32,7 @@
     .timer {
       font-size: 50px;
       padding: 1rem 2rem;
+      text-align: center;
     }
 
     .timer.red {
@@ -58,7 +59,7 @@
       }
 
       if (paused) {timerE.classList.add("yellow"); timerE.classList.remove("red");}
-      else if (timer <= 3000) {timerE.classList.add("red"); timerE.classList.remove("yellow");}
+      else if (timer <= 9000) {timerE.classList.add("red"); timerE.classList.remove("yellow");}
       else timerE.classList.remove("yellow", "red");
     }
     
