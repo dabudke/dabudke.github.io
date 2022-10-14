@@ -1,0 +1,41 @@
+@import url(theme.css);
+
+@media not screen and (max-width: 800px) {
+  .body-wrapper {
+    display: grid;
+    grid-template:
+      "whoami whoami"
+      "prjcts recpos"
+      "prjcts ------"/
+      3fr     2fr;
+  }
+}
+
+.body-wrapper {
+  box-sizing: border-box;
+  width: 100vw;
+  max-width: 70rem;
+  margin: 0 auto;
+  padding: 0 1rem 0 0;
+}
+
+nav {
+  grid-area: navbar;
+}
+
+.about {
+  grid-area: whoami;
+}
+
+.projects {
+  grid-area: prjcts;
+}
+/* TODO 2 column projects layout */
+
+.posts {
+  grid-area: recpos;
+}
+
+footer {
+  grid-area: footer;
+}

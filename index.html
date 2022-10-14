@@ -1,28 +1,114 @@
 <!DOCTYPE html>
 <html lang="en_US">
   <head>
-    <title>Homepage | LittleKitacho's Coding Haven</title>
-    <link rel="stylesheet" href="./css/main.css">
+    <title>LittleKitacho | Freelance Guesser</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/img/favicon.png">
+    <link rel="stylesheet" href="/css/landing.css">
+    <script src="https://kit.fontawesome.com/1ef4e3c534.js" crossorigin="anonymous"></script>
   </head>
   <body>
-    <div class="header">
-      <h1 id="title">Welcome to LittleKitacho's Coding Workshop!</h1>
-      <h2 id="subtitle">Tutorials, projects and more!</h2>
+    <nav class="top-navbar">
+      <ul class="nav-left">
+        <li><a href="/">
+          <img src="/img/logo.png" alt="LittleKitacho Logo">
+        </a></li>
+      </ul>
+      <ul class="nav-right">
+        <li><a href="/projects/">PROJECTS</a></li>
+        <li><a href="/blog/">BLOG</a></li>
+        <li><a href="/about.html">ABOUT</a></li>
+      </ul>
+      <!-- <i class="fa-solid fa-caret-down nav-menu" onclick="nav_toggleNavbar()"></i> -->
+    </nav>
+
+    <!-- About Me -->
+    <header class="about hero primary">
+      <h1 class="heading">Hi! I'm LittleKitacho</h1>
+      <p class="paragraph">
+        I like making things using code, but you could probably tell that.
+        Recently, I've really been into web development. My old website shows
+        the improvement in my skills from a few years ago, from frameworks
+        to a completely custom theme that I hope you enjoy!<br>
+        Read more about my projects below, check out my blog posts, or read
+        more about me by clicking this link!
+      </p>
+      <a href="/about.html" class="button primary-inverted">About Me</a>
+    </header>
+
+    <div class="body-wrapper">
+      <!-- Featured Projects -->
+      <main class="projects">
+        <!-- ModKit -->
+        <section class="block primary">
+          <h1 class="heading">ModKit</h1>
+          <p class="paragraph">
+            ModKit is a Discord Bot that is just the right balance between bloat
+            and features, supplementing Discord's own features but not
+            reinventing the wheel. It's an idea that I've had for as long as I
+            can remenber, and has been a dream of mine for longer. I hope that
+            you will check it out and use it for moderating your server!<br>
+            Find out more at the website using the link below.
+          </p>
+          <a href="https://modkit-discord.github.io/" class="button primary-inverted"><i class="fa-solid fa-arrow-up-right-from-square"></i>ModKit Website</a>
+        </section>
+
+        <!-- Sokobot Dos -->
+        <section class="block secondary">
+          <h1 class="heading">Sokobot Dos</h1>
+          <p class="paragraph">
+            Sokobot was a Discord Bot created by Polymars, but was shut down
+            recently due to the changes to Discord not allowing bots to not use
+            slash commands and a general lack of updates. Sokobot Dos is a
+            recreation of Sokobot in TypeScript, using slash commands and all
+            that jazz. To be updated soon™
+          </p>
+          <a class="button secondary-inverted" href="https://github.com/LittleKitacho/sokobot-dos"><i class="fa-brands fa-github"></i>GitHub</a>
+          &nbsp;&bullet;&nbsp;
+          <a>Discord Server</a>
+        </section>
+
+        <!-- ACORICG -->
+        <section class="block primary">
+          <h1 class="heading">A Collection of Random Internet Card Games</h1>
+          <p class="paragraph">
+            You see the name, you can guess what this is.<br>
+            A collection of random internet card games that I put together for
+            fun. Features may be lacking, but they're all single page (ha) games
+            that people can run in their browser. Blackjack, one of the only games
+            on there at the moment but I'm hoping to change that, was made in a
+            weekend for no particular reason, and improved upon until I gave up!<br>
+            Currently working on getting some other card games in there, one of
+            which I came up with myself (I am that kind of nerd).<br>
+            Check it out if you would! It would mean a lot.
+          </p>
+          <a href="/card-games/" class="button primary-inverted"><i class="fa-solid fa-arrow-up-right-from-square"></i>Website</a>
+        </section>
+
+        <section class="block neutral small-border">
+          <h1 class="subheading">And much more!</h1>
+          <p class="paragraph">
+            If I put every projects that I've worked on in this page, you would
+            be scrolling for hours.  You can find more on my <a href="https://github.com/LittleKitacho">GitHub</a>.
+          </p>
+        </section>
+      </main>
+      <!-- Recent Blog Posts -->
+      <aside class="posts">
+        <h1 class="subheading ml mb-s">Recent Blog Posts</h1>
+        <a class="button neutral ml mb" href="/blog/">See More</a>
+      </aside>
     </div>
-    <h1 id="welcome">Welcome!</h1>
-    <p>Welcome to <strong>LittleKitacho's Coding Workshop!</strong></p>
-    <p>Here, you can view some <a href="./tutorials/index.html" target="_self">tutorials</a>,
-      see the index of my <a href="./projects/index.html">projects</a>, or see
-      <a href="./projects/blogs/index.html">blog updates</a> on my projects.
-    </p>
-    <div class="news">
-      <div class="news1">
-        <h1 id="brand_new_website">Brand new website!</h1>
-        <p>This is a brand new website for all of my coding projects, so I hope you like it.
-          <strong>I need your help.</strong>  If there are any errors with this website,
-          please email me at <a href="mailto:little.kitacho@outlook.com">this address</a>
-        </p>
-      </div>
-    </div>
+
+    <footer class="footer">
+      <ul class="socials">
+        <li><a href="https://github.com/LittleKitacho/"><i class="fa-brands fa-github"></i></a></li>
+        <li><a href="https://twitter.com/LittleKitacho"><i class="fa-brands fa-twitter"></i></a></li>
+        <!-- <li><a><i class="fa-brands fa-discord"></i></a></li> -->
+        <li><a href="https://www.youtube.com/channel/UCR8PkiQ4JleQG-21xURWtmQ"><i class='fa-brands fa-youtube'></i></a></li>
+      </ul>
+    </footer>
+
+    <div style="z-index: 100; position: absolute; top: 0; left: 0; width: 25rem; height: 1rem;"></div>
   </body>
 </html>
