@@ -1,0 +1,9 @@
+.block {
+  margin: 0 0 1rem 1rem;
+  padding: 1.4rem 1.7rem;
+  border-radius: 2rem;
+}
+
+.block.small-border {
+  border-radius: 1.5rem;
+}

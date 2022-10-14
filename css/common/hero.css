@@ -1,0 +1,13 @@
+
+
+.hero {
+  height: fit-content;
+  min-height: calc(100% - 5rem);
+  padding: 3rem 10%;
+  margin-bottom: 2rem;
+}
+@media screen and (max-width: 800px) {
+  .hero {
+    padding: 3rem 2rem;
+  }
+}

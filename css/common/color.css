@@ -1,0 +1,31 @@
+body {
+  background-color: var(--c-bg);
+  color: var(--c-on-bg);
+}
+
+.primary {
+  background-color: var(--c-pr);
+  color: var(--c-on-pr);
+}
+.primary-inverted {
+  background-color: var(--c-on-pr);
+  color: var(--c-pr);
+}
+
+.secondary {
+  background-color: var(--c-sc);
+  color: var(--c-on-sc);
+}
+.secondary-inverted {
+  background-color: var(--c-on-sc);
+  color: var(--c-sc);
+}
+
+.neutral {
+  background-color: var(--c-nt);
+  color: var(--c-on-nt);
+}
+.neutral-inverted {
+  background-color: var(--c-on-nt);
+  color: var(--c-nt);
+}

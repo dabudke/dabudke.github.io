@@ -1,0 +1,45 @@
+/* Font */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+/* Themes */
+@import url('colors/colors.light.css');
+@import url('colors/colors.dark.css') (prefers-color-scheme: dark);
+
+/* Modules */
+@import url('common/typography.css');
+@import url('common/color.css');
+@import url('common/layout.css');
+
+/* Blocks */
+@import url('common/navbar.css');
+@import url('common/blocks.css');
+@import url('common/buttons.css');
+@import url('common/footer.css');
+@import url('common/hero.css');
+
+/* Default Styles */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0px;
+}
+
+a {
+  color: inherit;
+}
+
+.only-dark {
+  display: none;
+}
+
+@media (prefers-color-scheme: dark) {
+  .only-dark {
+    display: initial;
+  }
+  .only-light {
+    display: none;
+  }
+}
+
